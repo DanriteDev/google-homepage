@@ -1,1 +1,1 @@
-Making a google home page clone.. 
+Assignment make a google clone (Easy Version)
