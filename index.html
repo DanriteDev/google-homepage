@@ -1,84 +1,76 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-.blue {
-	color: blue;
-}
-.red  {
-	color: red;
-}
-.yellow{
-color: orange;
-}
-.green {
-color: green;
-}
-
-.google-search input[type=search] {
-	width: 15%;
-	font-size: 22px;
-	padding: 10px;
-}
-
-.google-search input[type=search]:hover {
-	box-shadow: 5px 20px grey;
-}
+    <style>
+    	.container {
+			width: 100%;
+    	}
 
 
-</style>
-<head>
-	<title>Google Clone</title>
-</head>
-<body>
+		.google-search {
+			width: 576px;
+			margin: 0 auto;
+		}
+		
+		.google-search img {
+			display: block;
+			margin: 200px auto 0px auto;
+		}
 
+		.google-search input {
+			display: block;
+			height: 34px !important;
+			width: 400px;
+			margin: 27px auto;
+			border-radius: 25px;
+			border: 2px solid lightgrey;
+			line-height: 24px;
+			outline: none;
+			padding: 5px 25px 5px 25px;
+			font-size: 22px;
+			font-weight: 400;
+			color: grey;
+		}
 
-	<!-- Top NAV -->
+		
 
-<div class="nav">
-	<ul class="left-nav">
-		<li>About</li>
-		<li>Store</li>
-	</ul>
+    </style>
+    <head>
+        <title>Google Clone</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Top NAV -->
 
-	<ul class="right-nav">
-		<li>Gmail</li>
-		<li>Images</li>
-		<li>icon here</li>
-	</ul>
+           <!-- <div class="nav">
+                <ul class="left-nav">
+                    <li>About</li>
+                    <li>Store</li>
+                </ul>
 
+                <ul class="right-nav">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li>icon here</li>
+                </ul>
+            </div>-->
 
-</div>
+            <!-- End Top nav -->
 
-<!-- End Top nav -->
+            <!-- Search bar -->
 
+            <div class="google-search">
+                <img src="img/google-logo.png" alt="google logo">
+                <input type="text" name="text">
+            </div>
 
+            <!-- End Search Bar-->
 
-<!-- Search bar -->
-
-<div class="google-search">
-	
-<h1>
-	<span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
-</h1>
-
-<input type="search" name="search" results="0" placeholder="search">
-
-
-</div>
-
-<!-- End Search Bar-->
-
-
-
-
-
-<!-- Footer -->
-
-
-
-<!-- End footer -->
-
-
-</body>
+            <!-- Footer -->
+			<div class="footer">
+				
+			</div>
+            <!-- End footer -->
+        </div>
+    </body>
 </html>
+
