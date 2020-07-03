@@ -1,44 +1,160 @@
 <!DOCTYPE html>
 <html>
+
+
     <style>
-    	.container {
-			width: 100%;
-    	}
+    body {
+        font-family: arial,sans-serif;
+    }
+
+        
+    .container-fluid {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        background-color: grey;
+        width: 100%;
+        color: rgb(65,65,65);
+        font-size: 13px;
+    }
+
+     .nav {
+        list-style-type: none;
+    }
+
+    .nav li {
+        display: inline-block;
+    }
+
+    .nav li:not(:first-child) {
+        padding-left: 20px;
+    }
+
+    .left-nav {
+        float: left;
+    }
+
+    .right-nav {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .google {
+    width: 100%;
+    text-align: center;
+    }
+
+    .google-logo{
+        margin: 180px 0 40px 0;
+    }
+
+    .google-search {
+        display: flex;
+        width: 580px;
+        border: 1px solid rgba(0,0,0,0.2);;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 2px;
+    }
+
+    .google-search input {
+        vertical-align: center;
+        display: flex;
+        margin: 0 auto 0 0;
+        width: 510px;
+        line-height: 36px;
+        font-size: 16px;
+        border: none;
+        color: rgb(65,65,65);
+    }
+
+    .google-search input:focus {
+        outline: none;
+    }
+
+    .google-search:focus-within, .google-search:hover {
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
+
+    }
+
+    .search-icon {
+        display: flex;
+        padding: 8px;
+    }
+    
+    .footer {
+        color: grey;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: auto;
+        background-color: rgb(242,242,242);
+        border-top: 1px solid rgba(0,0,0,0.05);
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .footer-top {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .footer-bottom {
+        width: 100%;   
+    }
+           @media screen and (max-width: 800px){
+
+            .wrapper { 
+                width: 800px;
+             }
+
+            .navbar {
+                width: 800px;
+            }
+
+            .footer {
+                width: 800px;
+            }
+        }
 
 
-		.google-search {
-			width: 576px;
-			margin: 0 auto;
-		}
-		
-		.google-search img {
-			display: block;
-			margin: 200px auto 0px auto;
-		}
-
-		.google-search input {
-			display: block;
-			height: 34px !important;
-			width: 400px;
-			margin: 27px auto;
-			border-radius: 25px;
-			border: 2px solid lightgrey;
-			line-height: 24px;
-			outline: none;
-			padding: 5px 25px 5px 25px;
-			font-size: 22px;
-			font-weight: 400;
-			color: grey;
-		}
-
-		
-
+   
     </style>
     <head>
         <title>Google Clone</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
+
+            <div class="navbar">
+                    <ul class="nav left-nav">
+                        <li>About</li>
+                        <li>Store</li>
+                    </ul>
+
+                    <ul class="nav right-nav">
+                        <li>Gmail</li>
+                        <li>Images</li>
+                        <li></li>
+                    </ul>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="wrapper">
             <!-- Top NAV -->
 
            <!-- <div class="nav">
@@ -58,18 +174,49 @@
 
             <!-- Search bar -->
 
-            <div class="google-search">
-                <img src="img/google-logo.png" alt="google logo">
-                <input type="text" name="text">
+            <div class="google">
+                <img class="google-logo" src="img/google-logo.png" alt="google logo">
+                <div class="google-search">
+                    <div class="search-icon"><img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" width="24" height="24"></div>
+                    <input type="text" name="text">
+                </div>
             </div>
 
             <!-- End Search Bar-->
-
+        </div>
             <!-- Footer -->
 			<div class="footer">
-				
+                <div class="footer-top">
+                    <div class="nav left-nav">
+                        <ul>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+				<div class="footer-bottom">
+                    <div class="nav left-nav">
+                        <ul>
+                            <li>Advertising</li>
+                            <li>Business</li>
+                            <li>How Search Works</li>
+                        </ul>
+                    </div>
+
+                    <div class="nav right-nav">
+                        <ul>
+                            <li>Privacy</li>
+                            <li>Terms</li>
+                            <li>Settings</li>
+
+                        </ul>
+                    </div>
+
+                </div>
 			</div>
             <!-- End footer -->
+
         </div>
     </body>
 </html>
