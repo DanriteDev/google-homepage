@@ -1,0 +1,125 @@
+    body {
+        font-family: arial,sans-serif;
+    }
+
+        
+    .container-fluid {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        background-color: grey;
+        width: 100%;
+        color: rgb(65,65,65);
+        font-size: 13px;
+    }
+
+     .nav {
+        list-style-type: none;
+    }
+
+    .nav li {
+        display: inline-block;
+    }
+
+    .nav li:not(:first-child) {
+        padding-left: 20px;
+    }
+
+    .left-nav {
+        float: left;
+    }
+
+    .right-nav {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .google {
+    width: 100%;
+    text-align: center;
+    }
+
+    .google-logo{
+        margin: 180px 0 40px 0;
+    }
+
+    .google-search {
+        display: flex;
+        width: 580px;
+        border: 1px solid rgba(0,0,0,0.2);;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 2px;
+    }
+
+    .google-search input {
+        vertical-align: center;
+        display: flex;
+        margin: 0 auto 0 0;
+        width: 510px;
+        line-height: 36px;
+        font-size: 16px;
+        border: none;
+        color: rgb(65,65,65);
+    }
+
+    .google-search input:focus {
+        outline: none;
+    }
+
+    .google-search:focus-within, .google-search:hover {
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
+
+    }
+
+    .search-icon {
+        display: flex;
+        padding: 8px;
+    }
+    
+    .footer {
+        color: grey;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: auto;
+        background-color: rgb(242,242,242);
+        border-top: 1px solid rgba(0,0,0,0.05);
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .footer-top {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .footer-bottom {
+        width: 100%;   
+    }
+           @media screen and (max-width: 800px){
+
+            .wrapper { 
+                width: 800px;
+             }
+
+            .navbar {
+                width: 800px;
+            }
+
+            .footer {
+                width: 800px;
+            }
+        }
