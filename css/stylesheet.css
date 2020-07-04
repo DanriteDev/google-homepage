@@ -2,6 +2,11 @@
         font-family: arial,sans-serif;
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
         
     .container-fluid {
         width: 100%;
@@ -13,7 +18,6 @@
     }
 
     .navbar {
-        background-color: grey;
         width: 100%;
         color: rgb(65,65,65);
         font-size: 13px;
@@ -28,7 +32,7 @@
     }
 
     .nav li:not(:first-child) {
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
     .left-nav {
@@ -42,6 +46,35 @@
 
     .clearfix {
         clear: both;
+    }
+
+    .google-icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        display: inline-block;
+        background-size: 528px 68px;
+        background-position: -132px -40px;
+        opacity: 0.50;
+        background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+
+    }
+
+    .google-icon:hover {
+        opacity: 1;
+        cursor: pointer;
+
+    }
+
+    .sign-in {
+       padding: 0 14px;
+        color: white;
+        line-height: 30px;
+        font-size: 13px;
+        border: 1px solid rgb(83,134,237);
+background-color: rgb(83,134,237);
+border-radius: 4px;
+font-weight: 600;
     }
 
     .google {
@@ -83,6 +116,7 @@
         box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
 
     }
+    
 
     .search-icon {
         display: flex;
@@ -144,3 +178,5 @@ border-radius: 4px;
                 width: 800px;
             }
         }
+
+ 
