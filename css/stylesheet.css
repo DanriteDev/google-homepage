@@ -13,7 +13,7 @@
     }
 
     .wrapper {
-        width: 1280px;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -116,6 +116,17 @@ font-weight: 600;
         box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
 
     }
+
+    .google-seach:focus-within {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        display: inline-block;
+        background-size: 528px 68px;
+        background-position: -132px -40px;
+        opacity: 0.50;
+        background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+    }
     
 
     .search-icon {
@@ -123,7 +134,7 @@ font-weight: 600;
         padding: 8px;
     }
 
-    input[type="submit"]{
+    .google-buttons button{
         padding: 0 16px;
         color: rgb(65,65,65);
         margin-top: 40px;
@@ -136,7 +147,7 @@ background-color: rgb(242,242,242);
 border-radius: 4px;
     }
 
-        input[type="submit"]:hover{
+        .google-buttons button:hover{
         background-color: #f7f7f7f7;
         border-color: #c6c6c6;
         color: black;
@@ -164,19 +175,55 @@ border-radius: 4px;
     .footer-bottom {
         width: 100%;   
     }
-           @media screen and (max-width: 800px){
+           @media screen and (max-width: 768px){
+            .navbar .left-nav {
+                display: none;
 
-            .wrapper { 
-                width: 800px;
-             }
-
-            .navbar {
-                width: 800px;
-            }
-
-            .footer {
-                width: 800px;
-            }
         }
+                .footer-bottom .nav {
+                    float: none;
+                    text-align: center;
+                }
+
+                .google-search {
+        width: 480px;
+        }
+
+    .google-search input {
+        
+        width: 410px;
+
+    }
+
+
+            }
+
+
+            @media screen and (max-width: 520px){
+            .navbar .left-nav {
+                display: none;
+
+        }
+                .footer-bottom .nav {
+                    float: none;
+                    text-align: center;
+                }
+
+                .google-search {
+        width: 400px;
+        }
+
+    .google-search input {
+        
+        width: 330px;
+
+    }
+
+
+            }
+
+
+
+
 
  
